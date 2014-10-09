@@ -9,7 +9,7 @@ original repo for the normal version.
 Build from docker file
 
 ```
-git clone git@github.com:timhaak/docker-plex.git
+git clone git@github.com:maran/docker-plex-pass.git
 cd docker-plex-pass
 docker build -t plex-pass .
 ```
