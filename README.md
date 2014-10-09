@@ -1,20 +1,23 @@
-docker plex
+docker plex-pass
 ===========
 
 This is a Dockerfile to set up (https://plex.tv/ "Plex Media Server") - (https://plex.tv/)
+
+This version installs the Plex Pass version of the server. See the
+original repo for the normal version.
 
 Build from docker file
 
 ```
 git clone git@github.com:timhaak/docker-plex.git
-cd docker-plex
-docker build -t plex . 
+cd docker-plex-pass
+docker build -t plex-pass .
 ```
 
-You can also obtain it via:  
+You can also obtain it via:
 
 ```
-docker pull timhaak/plex
+docker pull maran/plex-pass
 ```
 
 ---

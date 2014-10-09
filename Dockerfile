@@ -10,7 +10,7 @@ RUN apt-get -qy --force-yes dist-upgrade
 
 RUN apt-get install -qy --force-yes curl
 
-RUN echo "deb http://shell.ninthgate.se/packages/debian squeeze main" > /etc/apt/sources.list.d/plexmediaserver.list
+RUN echo "deb http://shell.ninthgate.se/packages/debian plexpass main" > /etc/apt/sources.list.d/plexmediaserver.list
 
 RUN curl http://shell.ninthgate.se/packages/shell-ninthgate-se-keyring.key | apt-key add -
 
