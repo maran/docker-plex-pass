@@ -1,5 +1,7 @@
 #! /bin/sh
 
+mkdir -p /config/logs/supervisor
+
 rm -rf /var/run/*
 rm -f "/config/Library/Application Support/Plex Media Server/plexmediaserver.pid"
 
@@ -12,7 +14,4 @@ sleep 1
 avahi-daemon -D
 sleep 1
 
-HOME=/config start_pms &
-sleep 5
-
-tail -f /config/Library/Application\ Support/Plex\ Media\ Server/Logs/**/*.log
+/usr/bin/supervisord -c /etc/supervisor/conf.d/supervisord.conf
